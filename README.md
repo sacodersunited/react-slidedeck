@@ -1,7 +1,12 @@
-
 # mdx-deck basic template
 
 This was generated with [mdx-deck][]'s `npm init deck` command.
+
+# Deployment
+
+Project lives on Netlify here:
+
+[https://brave-carson-1cd6c2.netlify.com/](https://brave-carson-1cd6c2.netlify.com/)
 
 ## Development
 
