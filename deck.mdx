@@ -1,0 +1,186 @@
+import { Head, Notes} from 'mdx-deck'
+import { FullScreenCode, Split } from 'mdx-deck/layouts'
+export { hack as theme } from 'mdx-deck/themes'
+
+<Head>
+  <title>React for BTS</title>
+</Head>
+
+# React
+
+![reactjs](https://media.giphy.com/media/iqz4atBej74cg/giphy.gif)
+
+Paul Castillo
+
+---
+
+## Overview
+
+- History
+- JavaScript ES Version
+- React fundamentals
+- Terms to Learn
+- Syntax Differences
+- Thinking in React
+
+---
+
+## History
+
+---
+
+## JavaScript ES Versions
+
+![js](https://cdn-images-1.medium.com/max/1600/1*Zmm4_vfUPNc_eyzUIZzN6Q.png)
+
+---
+## React fundamentals
+
+- One-way data binding with props
+- Stateful components
+- Virtual DOM
+- JSX
+- Lifecycle Methods
+
+---
+### One-way data binding with props
+
+```jsx
+// Code Example
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+class HelloWorld extends React.Component {
+  render() {
+    return <div>Hello World!</div>
+  }
+}
+
+ReactDOM.render(<HelloWorld message="Nice to meet you" />, document.getElementById('root'))
+```
+---
+### Stateful components
+```jsx
+class ParentComponent extends React.Component {
+  state = { color: 'green' };
+  render() {
+    return (
+      <ChildComponent color={this.state.color} />
+    );
+  }
+}
+```
+---
+### JSX (JavaScript + HTML)
+
+```jsx
+    if (this.props.isMessagePassed) {
+      return <div>The message is passed</div>;
+    }
+```
+
+---
+## Terms to Learn
+
+JSX — Allows us to write HTML like syntax which gets
+transformed to lightweightJavaScript objects.
+
+Virtual DOM — A JavaScript representation of the actual
+DOM.
+
+React.Component — The way in which you create a new component.
+
+---
+
+## Terms to Learn (cont)
+
+render (method) — Describes what the UI will look like for
+the particular component.
+
+ReactDOM.render — Renders a React component to a DOM node.
+
+state — The internal data store (object) of a component.
+
+constructor (this.state) - The way in which you establish
+the initial state of a component.
+
+---
+
+## Terms to Learn(cont)
+
+setState — A helper method used for updating the state of a
+component and re-rendering the UI
+
+props — The data which is passed to the child component
+from the parent component.
+
+propTypes — Allows you to control the presence, or types of
+certain props passed to the child component.
+
+defaultProps — Allows you to set default props for your component.
+
+---
+
+export default FullScreenCode
+
+```jsx
+// Code Example
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+class HelloWorld extends React.Component {
+  render() {
+    return <div>Hello World!</div>
+  }
+}
+
+ReactDOM.render(<HelloWorld />, document.getElementById('root'))
+```
+
+---
+## Syntax Differences
+| | JavaScript  | C# |
+|---|---|---|
+| Typing  | Weak/Dynamic | Static  |
+|  Compilation | Interpreted   | Compiled  |
+
+
+---
+### Pros
+|JavaScript  | C# |
+|---|---|
+| Dynamic | Cool Syntax  |
+| Lives in Browser   | Great Lambda support  |
+| Fast | Great Generics support |
+| Flexible | Extention Methods |
+| Non-blocking I/O | Automatic Garbage Collection |
+
+---
+## Thinking in React
+
+![comps](https://reactjs.org/static/thinking-in-react-components-eb8bda25806a89ebdc838813bdfa3601-82965.png)
+
+<Notes>
+  Only visible in presenter mode
+  `opt + o` for overview mode`
+  `opt + p` for preseter mode
+</Notes>
+
+---
+
+## Resources
+
+- [React Docs](https://reactjs.org/docs/getting-started.html)
+- [Tyler McGinnis: Guide to Learning React](https://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/)
+
+---
+
+## 🙋‍ Questions
+
+---
+
+## Created with ❤️ with mdx-deck
+
+<https://github.com/jxnblk/mdx-deck>
